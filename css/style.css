@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.section {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #555;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #222;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #222;
+  color: white;
+}
+
+div.content {
+  background-color: #222;
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile img {
+  width: 150px;
+  padding: 1.5vw;
+  border-radius: 2rem;
+  border-bottom-style: outset;
+  border-top-style: inset;
+  margin-left: 4px;
+}
+header {
+  /* height: calc(100vh + 10rem); */
+  position: relative;
+}
+header img {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  border: 3px solid #555;
+}
+.bg-text {
+  position: absolute;
+  width: 50%;
+  left: 40%;
+  right: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+  bottom: 30%;
+  font-size: 1rem;
+}
+.hobbies-div {
+  display: flex;
+}
+.material-icons {
+  color: #fff;
+  font-size: 4rem !important;
+  margin: 0 auto;
+  border: 5px solid #021344ed;
+  border-radius: 2rem;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  padding: 1rem;
+}
+.hobbies-content:active {
+  background-color: #18afe8;
+}
+
+.hobbies-content:hover {
+  background-color: #07384bde;
+  transform: scale(1.2, 1.2);
+  border: none;
+  color: #fff;
+}
+.hobbies-content:visited {
+  background-color: #fff;
+}
+
+.hobbies-content {
+  display: flex;
+  border: 2px solid #555;
+  background-color: #555;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.hobbies-content p {
+  margin: 0 auto;
+}
+.hobbies-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.ml3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+  .profile img {
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .bg-text {
+    bottom: 50%;
+  }
+}
+@media screen and (max-width: 998px) {
+  .bg-text {
+    top: 0;
+  }
+}
