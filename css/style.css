@@ -4,8 +4,8 @@ body {
 }
 
 .section {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  /* margin-top: 1rem;
+  margin-bottom: 2rem; */
 }
 .sidebar {
   margin: 0;
@@ -16,12 +16,23 @@ body {
   height: 100%;
   overflow: auto;
 }
+.sidebar div label {
+  color: #fff;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
 .sidebar a {
-  display: block;
+  display: flex;
   color: #fff;
   padding: 1.5rem;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar a.active {
@@ -37,7 +48,6 @@ body {
 div.content {
   background-color: #222;
   margin-left: 200px;
-  padding: 1px 16px;
 }
 
 .profile {
@@ -47,32 +57,28 @@ div.content {
 
 .profile img {
   width: 150px;
-  padding: 1.5vw;
-  border-radius: 2rem;
-  border-bottom-style: outset;
-  border-top-style: inset;
-  margin-left: 4px;
+  border-radius: 20px;
+  margin: 10px;
 }
 header {
-  /* height: calc(100vh + 10rem); */
+  height: calc(100vh + 0rem);
   position: relative;
 }
 header img {
-  width: 75%;
+  width: 100%;
+  height: 100%;
   display: flex;
   margin: 0 auto;
-  border: 3px solid #555;
 }
 .bg-text {
   position: absolute;
-  width: 50%;
-  left: 40%;
-  right: 50%;
+  right: 0;
   transform: translateX(-50%);
   text-align: center;
   z-index: 1;
-  bottom: 30%;
+  bottom: 0;
   font-size: 1rem;
+  font-style: italic;
 }
 .hobbies-div {
   display: flex;
